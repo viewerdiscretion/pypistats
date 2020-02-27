@@ -7,12 +7,16 @@ cache:
 matrix:
   fast_finish: true
   include:
+    - python: nightly
+    - python: 3.9-dev
+    - python: 3.8-dev
+    - python: 3.7-dev
+    - python: 3.6-dev
     - python: 3.8
       env: TOXENV=lint
     - python: 3.8
     - python: 3.7
     - python: 3.6
-    - python: 3.9-dev
 
 install:
   - pip install -U pip
