@@ -33,4 +33,5 @@ jobs:
 
       - name: Lint
         run: tox -e lint
-        env: PRE_COMMIT_COLOR=always
+        env:
+          PRE_COMMIT_COLOR: always
